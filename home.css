@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 48px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px #ccc;
+  background-color: #fff;
+  justify-content: space-between;
+  height: 70px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+}
+.header-logo img {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+.header-logo p {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.left-section {
+  display: flex;
+  align-items: center;
+}
+.items {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+}
+
+#Login-box {
+  margin-top: 150px;
+}
+.LoginPage {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 6px #ccc;
+}
+.LoginPage h1 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+.inputfields {
+  width: 100%;
+  padding-top: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 25px;
+  outline: none;
+}
+.submit_button {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+.filter-option input {
+  border-radius: 24px;
+}

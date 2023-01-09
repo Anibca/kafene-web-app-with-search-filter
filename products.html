@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./orders.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./products.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <div class="header-logo">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="header-text">Kafene</p>
+            </div>
+            <nav>
+                <a class="items" href="./orders.html">Orders</a>
+                <a class="items" href="./products.html">Products</a>
+                <a class="items" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <a class="items" id="logout-button" href="./home.html">Logout</a>
+    </div>
+
+
+    <div class="outer-wrapper">
+        <h1 class="main-heading">Products</h1>
+        <div class="inner-wrapper">
+            <div class="filter-wrapper">
+                <h3>Filters</h3>
+                <div class="filter-option">
+                    <p>Count: <span id=count></span></p>
+                    <label class="filter-checkbox"><input type="checkbox" name="orders-new" id="expiredCheckBox"
+                            checked="">Expired</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="orders-new" id="nonExpiredCheckBox"
+                            checked="">Not Expired</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="orders-packed" id="highStockCheckBox"
+                            checked="">High Stock</label>
+                    <label class="filter-checkbox"><input type="checkbox" name="orders-packed" id="lowStockCheckBox"
+                            checked="">Low Stock</label>
+
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <table class="order-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Product Brand</th>
+                        <th>Expiry Date</th>
+                        <th>Unit Price</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
